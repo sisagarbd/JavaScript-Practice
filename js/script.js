@@ -1,5 +1,7 @@
-var a;
-let b;
-a = 45;
-a = 35;
-console.log(a);
+console.log("First Line")
+console.log("Second Line")
+
+
+
+let age = 36;
+console.log(`His age is ${age}`)
