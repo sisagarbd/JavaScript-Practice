@@ -1,7 +1,20 @@
-console.log("First Line")
-console.log("Second Line")
+function saysomething() {
+    console.log('Hello world!');
+}
+
+let saysomething1 = function() {
+    console.log('Hello world Again!');
+}
+
+
+saysomething();
+saysomething1();
 
 
 
-let age = 36;
-console.log(`His age is ${age}`)
+let saySomething2 = () => {
+    console.log("I am an Arrow Function!");
+}
+
+
+saySomething2();
