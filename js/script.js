@@ -1,20 +1,32 @@
-function saysomething() {
-    console.log('Hello world!');
-}
+let person= {
+    firstname : 'Fazle',
+    lastname : 'Rahat',
+    dob: "9-10-1995",
 
-let saysomething1 = function() {
-    console.log('Hello world Again a!');
-}
-
-
-saysomething();
-saysomething1();
-
-
-
-let saySomething2 = () => {
-    console.log("I am an Arrow Function!");
+    fullname: function() { 
+        return `${this.firstname} ${this.lastname}`;
+    }
 }
 
 
-saySomething2();
+console.log(person.firstname);
+console.log(person.fullname());
+
+
+
+
+
+
+
+
+
+
+
+
+// let printEverything = function (item, i, abc) {
+//     console.log(`Index: ${i} and Item: ${item})`);
+//     console.log(abc);
+// }
+
+
+// foods.forEach(printEverything);
