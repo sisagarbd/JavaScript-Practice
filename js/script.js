@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let person= {
     firstname : 'Fazle',
     lastname : 'Rahat',
@@ -30,3 +31,6 @@ console.log(person.fullname());
 
 
 // foods.forEach(printEverything);
+=======
+console.log("hello world!");
+>>>>>>> 8164e09a405f7345c690f22f7af8bf0d8eb19e1b
