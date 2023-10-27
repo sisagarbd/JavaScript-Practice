@@ -1,18 +1,18 @@
 class Person {
-    constructor(fname, lname, birthday){
+    constructor(fname, lname){
         this.firstname = fname;
         this.lastname = lname;
-        this.dob = birthday;
+    }
+    greating(){
+        console.log(`hello ${this.firstname} ${this.lastname}!`);
     }
 
-    calculateAge(){
-        let birthday = new Date(this.dob);
-        let diff = Date.now() - birthday.getTime();
-        let ageDate = new Date(diff);
-        return Math.abs(ageDate.getUTCFullYear()-1970);
-}
+    static test(){
+        console.log("I am static!");
+    }
 }
 
+let person1 = new Person("saiful", "islam");
 
-let person1 = new Person("saiful", "Islam", "08-21-1998");
-console.log(person1.calculateAge()); // console
+console.log(person1.greating());
+console.log(Person.test());
