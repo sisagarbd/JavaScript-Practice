@@ -1,23 +1,13 @@
-// document.getElementById
-
 let val;
+let list = document.querySelector('ul');
 
-val = document.getElementById('document-title');
-val = document.getElementById('document-title').id;
-val = document.getElementById('document-title').className;
+let listItem = document.querySelector('ul li:last-child');
 
-document.getElementById('document-title').style.background = '#333';
-document.getElementById('document-title').style.color = '#ffffff';
-document.getElementById('document-title').style.paddingLeft = '10px';
-document.getElementById('document-title').innerText = 'Hello';
-document.getElementById('document-title').innerHTML = '<i>Hello</i>';
+val = list;
+val = listItem;
 
-
-val = document.getElementById('document-title');
-
-val.innerText = "ha ha ha haaaa....";
-
-
-val = document.querySelector('ul li');
+//Get Child Nodes
+val = list;
+val = list.childNodes;
 
 console.log(val);
