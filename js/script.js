@@ -1,13 +1,11 @@
-let val;
-let list = document.querySelector('ul');
+console.log("before Error!");
 
-let listItem = document.querySelector('ul li:last-child');
+try {
+    test();
+}catch(err){
+    console.log(err.message);
+    console.log(err.name);
 
-val = list;
-val = listItem;
+}
 
-//Get Child Nodes
-val = list;
-val = list.childNodes;
-
-console.log(val);
+console.log("After Error!")
