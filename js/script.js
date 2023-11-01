@@ -7,7 +7,7 @@ class Person {
         console.log(`hello ${this.firstname} ${this.lastname}!`);
     }
 
-    static test(){
+    static test(){ 
         console.log("I am static!");
     }
 }
@@ -15,4 +15,15 @@ class Person {
 let person1 = new Person("saiful", "islam");
 
 console.log(person1.greating());
-console.log(Person.test());
+console.log(Person.test()); 
+console.log("before Error!");
+
+try {
+    test();
+}catch(err){
+    console.log(err.message);
+    console.log(err.name);
+
+}
+
+console.log("After Error!")
