@@ -1,0 +1,9 @@
+{
+    "persons": [
+      {"name": "Rahim", "age": 25, "hometowen":"Dhaka", "married":false},
+      {"name": "Karim", "age": 35, "hometowen":"Chittagong", "married":true},
+      {"name": "Ayon", "age": 27, "hometowen":"Chadpur", "married":false},
+      {"name": "Rahat", "age": 34, "hometowen":"Chittagong", "married":false}
+  
+    ]
+}

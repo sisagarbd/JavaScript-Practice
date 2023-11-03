@@ -1,29 +1,31 @@
-class Person {
-    constructor(fname, lname){
-        this.firstname = fname;
-        this.lastname = lname;
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        var data = this.responseText;
+        // console.log(data);
+        jsonData(data);
     }
-    greating(){
-        console.log(`hello ${this.firstname} ${this.lastname}!`);
-    }
+};
 
-    static test(){ 
-        console.log("I am static!");
+
+xmlhttp.open("GET", "data.json", true);
+xmlhttp.send();
+
+function jsonData(json_obj) {
+  // console.log(json_obj);
+  var js_obj = JSON.parse(json_obj);
+  // console.log(js_obj);
+
+  for (x in js_obj.persons){
+    var persons = js_obj.persons;
+    // console.log(persons[x]);
+    for(y in persons[x]){
+    
+      console.log( `${y} = ${persons[x][y]}`);
+    
     }
+    
+
+  }
+
 }
-
-let person1 = new Person("saiful", "islam");
-
-console.log(person1.greating());
-console.log(Person.test()); 
-console.log("before Error!");
-
-try {
-    test();
-}catch(err){
-    console.log(err.message);
-    console.log(err.name);
-
-}
-
-console.log("After Error!")
